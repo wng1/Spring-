@@ -8,4 +8,16 @@ private String productDesc;
 private long unitsAvailable;
 private long unitsOrdered;
 
+public Product()
+{
+  super(); 
+}
+
+public Product(String pID, String productName, double price)
+{
+  this.pID=pID;
+  this.productName=productName;
+  this.price=price;
+}
+
 }
