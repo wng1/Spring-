@@ -20,4 +20,29 @@ public Product(String pID, String productName, double price)
   this.price=price;
 }
 
+
+//Use eclipse to generate the getters and setters
+
+@Override
+public boolean equals(Object obj)
+{
+  if (this == obj)
+  return true;
+  if (obj == null)
+  return false;
+  if(getClass() !=obj.getClass())
+  return false;
+  Product other = (Product) obj;
+  if (pID == null)
+  {
+     if (other.pID) !=null)
+     return false;
+  } else if (!pID.equals(other.pID)
+return false;
+return true;
+}
+
+}
+
+
 }
