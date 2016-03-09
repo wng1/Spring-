@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS "Product";
+
+CREATE TABLE "Product" 
+(
+"PID" int(11) AUTO_INCREMENT,
+"productName" varchar(30),
+"PRIMARY KEY ("PID")
+) 
+ 
+insert into "Product" (PID, productName) values (1, 'ProductOne');
+
+//Create relationships afterwards
