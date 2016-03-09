@@ -7,7 +7,7 @@ public List<Product> getPID()
 {
 List productList = new ArrayList();
 
-String sqlQuery = "SELECT PID FROM Products";
+String sqlQuery = "SELECT * FROM Products"; //Update for security
 
 JdbcTemplate jdbcTemp = new JdbcTemplate(ds);
 productList = jdbcTemplate.query(sqlQuery, new ProductRowMapper()); //Custom Row Mapper to be created
