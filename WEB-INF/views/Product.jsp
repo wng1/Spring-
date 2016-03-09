@@ -11,5 +11,16 @@
 <p>${product.productDesc}</p>
 <p>${product.productCost}</p> //verify this matches the variable in the java class
 </div>
+
+//Loop all available products from db to the jsp page
+<c:forEach var="product" items="${productList}">
+<tr>
+<td>${product.PID}</td>
+<td>${product.productName}</td>
+<td>${product.productCost}</td>
+</tr>
+</c:forEach>
+			
+			
 </body>
 </html>
